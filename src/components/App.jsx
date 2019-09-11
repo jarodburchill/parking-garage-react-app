@@ -35,9 +35,12 @@ const App = () => {
   const getDisplay = () => {
     if (activeTicket === null) {
       return (
-        <div className="time-container">
-          <h1>{time}:00</h1>
-          <button onClick={() => tick()}>▲</button>
+        <div className="display-container">
+          <div className="time-container">
+            <h1>{time}:00</h1>
+            <button onClick={() => tick()}>▲</button>
+          </div>
+          <button onClick={() => park()}>Park Vehicle</button>
         </div>
       );
     } else {
@@ -57,7 +60,6 @@ const App = () => {
     <div className="app-container">
       {getDisplay()}
       <Parking parking={parking} setActiveTicket={setActiveTicket} />
-      <button onClick={() => park()}>Park Vehicle</button>
     </div>
   );
 };

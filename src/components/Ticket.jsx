@@ -2,7 +2,7 @@ import React from "react";
 
 const Ticket = ({ time, setActiveTicket }) => {
   return (
-    <div className="ticket-container">
+    <div className="display-container">
       <h2>Ticket</h2>
       <h3>Issued: {time}:00</h3>
       <div>

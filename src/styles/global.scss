@@ -32,14 +32,7 @@ img {
   // background: rgb(54, 54, 54);
 }
 
-.time-container {
-  display: flex;
-  button {
-    margin: 0 0 0 2.5vh;
-  }
-}
-
-.ticket-container {
+.display-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,6 +42,13 @@ img {
   border-radius: 2vh;
   button {
     margin: 0.5vh;
+  }
+}
+
+.time-container {
+  display: flex;
+  button {
+    margin: 0 0 0 2.5vh;
   }
 }
 
