@@ -1,6 +1,6 @@
 import React from "react";
 
-const Ticket = ({ time }) => {
+const Ticket = ({ time, setActiveTicket }) => {
   return (
     <div className="ticket-container">
       <h2>Ticket</h2>
@@ -8,7 +8,7 @@ const Ticket = ({ time }) => {
       <div>
         <button>Pay Ticket</button>
         <button>Leave Garage</button>
-        <button>Back</button>
+        <button onClick={() => setActiveTicket(null)}>Back</button>
       </div>
     </div>
   );

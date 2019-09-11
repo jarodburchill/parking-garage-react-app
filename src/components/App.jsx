@@ -41,7 +41,12 @@ const App = () => {
         </div>
       );
     } else {
-      return <Ticket time={activeTicket.ticket.time} />;
+      return (
+        <Ticket
+          time={activeTicket.ticket.time}
+          setActiveTicket={setActiveTicket}
+        />
+      );
     }
   };
 
