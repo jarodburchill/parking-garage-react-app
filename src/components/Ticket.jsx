@@ -1,11 +1,11 @@
 import React from "react";
 
-function Ticket() {
+const Ticket = () => {
   return (
     <div>
       <span>hello</span>
     </div>
   );
-}
+};
 
 export default Ticket;

@@ -25,9 +25,11 @@ img {
   width: 100vw;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: rgb(54, 54, 54);
+  background: rgb(168, 168, 168);
+  // background: rgb(54, 54, 54);
 }
 
 .garage-container {
@@ -35,16 +37,25 @@ img {
   height: 50vh;
   background: rgb(255, 196, 0);
   padding: 0 0 1vh 0;
+  margin: 10vh;
 }
 
-.spot-container {
+@mixin spot-container {
   display: flex;
   justify-content: center;
   width: 19vh;
   height: 7.35vh;
   background: rgb(168, 168, 168);
   margin: 1vh 0 1vh 1vh;
+}
+
+.occupied-spot {
+  @include spot-container;
   &:hover {
     box-shadow: 0px 1px 5px rgb(0, 0, 0);
   }
+}
+
+.vacant-spot {
+  @include spot-container;
 }
