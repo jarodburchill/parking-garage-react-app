@@ -1,5 +1,5 @@
 import React from "react";
-import Vehikl from "./Vehikl";
+import Vehicle from "./Vehicle";
 
 const Spot = ({ spot }) => {
   if (spot === "vacant") {
@@ -8,7 +8,7 @@ const Spot = ({ spot }) => {
 
   return (
     <div className="occupied-spot">
-      <Vehikl vehikl={spot.vehikl} />
+      <Vehicle vehicle={spot.vehicle} />
     </div>
   );
 };

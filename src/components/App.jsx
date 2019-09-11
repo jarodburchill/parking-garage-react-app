@@ -10,15 +10,15 @@ import suv from "../assets/suv.svg";
 const App = () => {
   const [parking, setParking] = useState([]);
 
-  const getVehikl = () => {
-    const vehikls = [car, compact, jeep, bus, truck, suv];
+  const getVehicle = () => {
+    const vehicles = [car, compact, jeep, bus, truck, suv];
     const random = Math.floor(Math.random() * 6);
-    return vehikls[random];
+    return vehicles[random];
   };
 
   const park = () => {
     if (parking.length < 6) {
-      parking.push({ vehikl: getVehikl() });
+      parking.push({ vehicle: getVehicle() });
       setParking([...parking]);
     } else {
       alert("Lot is full!");
@@ -28,7 +28,7 @@ const App = () => {
   return (
     <div className="app-container">
       <Parking parking={parking} />
-      <button onClick={() => park()}>Add car</button>
+      <button onClick={() => park()}>Park Vehicle</button>
     </div>
   );
 };
