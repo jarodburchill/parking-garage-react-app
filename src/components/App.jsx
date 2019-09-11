@@ -21,7 +21,10 @@ const App = () => {
 
   const park = () => {
     if (parking.length < 6) {
-      parking.push({ vehicle: getVehicle(), ticket: { time: time } });
+      parking.push({
+        vehicle: getVehicle(),
+        ticket: { id: parking.length, time: time, paid: false }
+      });
       setParking([...parking]);
     } else {
       alert("Lot is full!");

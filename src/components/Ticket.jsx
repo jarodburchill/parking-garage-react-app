@@ -1,6 +1,7 @@
 import React from "react";
 
 const Ticket = ({ ticket, setActiveSpot }) => {
+  console.log(ticket);
   return (
     <div className="display-container">
       <h2>Ticket</h2>
