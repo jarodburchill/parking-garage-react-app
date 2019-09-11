@@ -1,7 +1,7 @@
 import React from "react";
 import Vehicle from "./Vehicle";
 
-const Spot = ({ spot, setActiveTicket }) => {
+const Spot = ({ spot, setActiveSpot }) => {
   if (spot === "vacant") {
     return <div className="vacant-spot"></div>;
   }
@@ -9,7 +9,7 @@ const Spot = ({ spot, setActiveTicket }) => {
   return (
     <div
       className="occupied-spot"
-      onClick={() => setActiveTicket(spot)}
+      onClick={() => setActiveSpot(spot)}
       tabIndex="0"
     >
       <Vehicle vehicle={spot.vehicle} />

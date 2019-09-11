@@ -1,14 +1,14 @@
 import React from "react";
 
-const Ticket = ({ time, setActiveTicket }) => {
+const Ticket = ({ ticket, setActiveSpot }) => {
   return (
     <div className="display-container">
       <h2>Ticket</h2>
-      <h3>Issued: {time}:00</h3>
+      <h3>Issued: {ticket.time}:00</h3>
       <div>
         <button>Pay Ticket</button>
         <button>Leave Garage</button>
-        <button onClick={() => setActiveTicket(null)}>Back</button>
+        <button onClick={() => setActiveSpot(null)}>Back</button>
       </div>
     </div>
   );

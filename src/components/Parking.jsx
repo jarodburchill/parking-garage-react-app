@@ -1,7 +1,7 @@
 import React from "react";
 import Spot from "./Spot";
 
-const Parking = ({ parking, setActiveTicket }) => {
+const Parking = ({ parking, setActiveSpot }) => {
   let blanks = [];
 
   if (parking.length < 6) {
@@ -13,9 +13,7 @@ const Parking = ({ parking, setActiveTicket }) => {
   return (
     <div className="garage-container">
       {parking.map((spot, index) => {
-        return (
-          <Spot key={index} spot={spot} setActiveTicket={setActiveTicket} />
-        );
+        return <Spot key={index} spot={spot} setActiveSpot={setActiveSpot} />;
       })}
       {blanks.map(id => {
         return <Spot key={id} spot={"vacant"} />;

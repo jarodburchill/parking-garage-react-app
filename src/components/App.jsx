@@ -10,7 +10,7 @@ import suv from "../assets/suv.svg";
 
 const App = () => {
   const [parking, setParking] = useState([]);
-  const [activeTicket, setActiveTicket] = useState(null);
+  const [activeSpot, setActiveSpot] = useState(null);
   const [time, setTime] = useState(0);
 
   const getVehicle = () => {
@@ -33,7 +33,7 @@ const App = () => {
   };
 
   const getDisplay = () => {
-    if (activeTicket === null) {
+    if (activeSpot === null) {
       return (
         <div className="display-container">
           <div className="time-container">
@@ -45,21 +45,18 @@ const App = () => {
       );
     } else {
       return (
-        <Ticket
-          time={activeTicket.ticket.time}
-          setActiveTicket={setActiveTicket}
-        />
+        <Ticket ticket={activeSpot.ticket} setActiveSpot={setActiveSpot} />
       );
     }
   };
 
   console.log(parking);
-  console.log(activeTicket);
+  console.log(activeSpot);
 
   return (
     <div className="app-container">
       {getDisplay()}
-      <Parking parking={parking} setActiveTicket={setActiveTicket} />
+      <Parking parking={parking} setActiveSpot={setActiveSpot} />
     </div>
   );
 };
