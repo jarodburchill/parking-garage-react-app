@@ -48,13 +48,17 @@ const App = () => {
       );
     } else {
       return (
-        <Ticket ticket={activeSpot.ticket} setActiveSpot={setActiveSpot} />
+        <Ticket
+          ticket={activeSpot.ticket}
+          time={time}
+          activeSpot={activeSpot}
+          setActiveSpot={setActiveSpot}
+        />
       );
     }
   };
 
   console.log(parking);
-  console.log(activeSpot);
 
   return (
     <div className="app-container">
