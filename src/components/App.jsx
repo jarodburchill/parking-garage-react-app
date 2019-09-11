@@ -10,6 +10,7 @@ import suv from "../assets/suv.svg";
 
 const App = () => {
   const [parking, setParking] = useState([]);
+  const [activeTicket, setActiveTicket] = useState(null);
   const [time, setTime] = useState(0);
 
   const getVehicle = () => {
@@ -20,7 +21,7 @@ const App = () => {
 
   const park = () => {
     if (parking.length < 6) {
-      parking.push({ vehicle: getVehicle(), time: time });
+      parking.push({ vehicle: getVehicle(), ticket: { time: time } });
       setParking([...parking]);
     } else {
       alert("Lot is full!");
@@ -31,16 +32,26 @@ const App = () => {
     setTime(time + 1);
   };
 
+  const getDisplay = () => {
+    if (activeTicket === null) {
+      return (
+        <div className="time-container">
+          <h1>{time}:00</h1>
+          <button onClick={() => tick()}>▲</button>
+        </div>
+      );
+    } else {
+      return <Ticket time={activeTicket.ticket.time} />;
+    }
+  };
+
   console.log(parking);
+  console.log(activeTicket);
 
   return (
     <div className="app-container">
-      <div className="time-container">
-        <h1>{time}:00</h1>
-        <button onClick={() => tick()}>▲</button>
-      </div>
-      <Ticket time={0} />
-      <Parking parking={parking} />
+      {getDisplay()}
+      <Parking parking={parking} setActiveTicket={setActiveTicket} />
       <button onClick={() => park()}>Park Vehicle</button>
     </div>
   );

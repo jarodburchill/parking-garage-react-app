@@ -5,6 +5,11 @@ const Ticket = ({ time }) => {
     <div className="ticket-container">
       <h2>Ticket</h2>
       <h3>Issued: {time}:00</h3>
+      <div>
+        <button>Pay Ticket</button>
+        <button>Leave Garage</button>
+        <button>Back</button>
+      </div>
     </div>
   );
 };
