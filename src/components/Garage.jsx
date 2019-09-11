@@ -1,9 +1,15 @@
 import React from "react";
+import Spot from "./Spot";
 
 function Garage() {
   return (
-    <div>
-      <span>hello</span>
+    <div className="garage-container">
+      <Spot />
+      <Spot />
+      <Spot />
+      <Spot />
+      <Spot />
+      <Spot />
     </div>
   );
 }

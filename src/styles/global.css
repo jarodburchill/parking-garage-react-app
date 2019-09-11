@@ -16,3 +16,32 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+img {
+  width: 10vh;
+}
+
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(54, 54, 54);
+}
+
+.garage-container {
+  width: 20vh;
+  height: 50vh;
+  background: rgb(255, 196, 0);
+  padding: 0 0 1vh 0;
+}
+
+.spot-container {
+  display: flex;
+  justify-content: center;
+  width: 19vh;
+  height: 7.35vh;
+  background: rgb(168, 168, 168);
+  margin: 1vh 0 1vh 1vh;
+}

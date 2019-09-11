@@ -1,9 +1,10 @@
 import React from "react";
+import Garage from "./Garage";
 
 function App() {
   return (
-    <div>
-      <span>hello</span>
+    <div className="app-container">
+      <Garage />
     </div>
   );
 }
