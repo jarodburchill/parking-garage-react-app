@@ -9,6 +9,7 @@ const Parking = ({ parking }) => {
       blanks.push(i);
     }
   }
+
   return (
     <div className="garage-container">
       {parking.map((spot, index) => {
