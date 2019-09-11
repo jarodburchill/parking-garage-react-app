@@ -44,4 +44,7 @@ img {
   height: 7.35vh;
   background: rgb(168, 168, 168);
   margin: 1vh 0 1vh 1vh;
+  &:hover {
+    box-shadow: 0px 1px 5px rgb(0, 0, 0);
+  }
 }
