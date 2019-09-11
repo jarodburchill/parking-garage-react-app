@@ -12,7 +12,7 @@ const App = () => {
 
   const getVehicle = () => {
     const vehicles = [car, compact, jeep, bus, truck, suv];
-    const random = Math.floor(Math.random() * 6);
+    const random = (Math.random() * 6) << 0;
     return vehicles[random];
   };
 
