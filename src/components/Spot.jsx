@@ -7,7 +7,11 @@ const Spot = ({ spot, setActiveTicket }) => {
   }
 
   return (
-    <div className="occupied-spot" onClick={() => setActiveTicket(spot)}>
+    <div
+      className="occupied-spot"
+      onClick={() => setActiveTicket(spot)}
+      tabIndex="0"
+    >
       <Vehicle vehicle={spot.vehicle} />
     </div>
   );

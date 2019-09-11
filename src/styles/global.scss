@@ -29,7 +29,6 @@ img {
   align-items: center;
   justify-content: center;
   background: rgb(168, 168, 168);
-  // background: rgb(54, 54, 54);
 }
 
 .display-container {
@@ -73,6 +72,10 @@ img {
   @include spot-container;
   &:hover {
     box-shadow: 0px 1px 5px rgb(0, 0, 0);
+  }
+  &:focus {
+    outline: 0;
+    background: rgb(162, 116, 216);
   }
 }
 
