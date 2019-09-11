@@ -1,6 +1,6 @@
 import React from "react";
 
-const Ticket = ({ time, activeSpot, setActiveSpot }) => {
+const Ticket = ({ time, activeSpot, setActiveSpot, parking, setParking }) => {
   console.log(activeSpot);
   const calculateRate = () => {
     const hours = time - activeSpot.ticket.time;
@@ -14,9 +14,19 @@ const Ticket = ({ time, activeSpot, setActiveSpot }) => {
     } else {
       amountOwed = 24;
     }
-    alert(`You owe $${amountOwed}.00 for your ${hours} hours of parking.`);
+    alert(`You paid $${amountOwed}.00 for your ${hours} hours of parking.`);
     activeSpot.ticket.paid = true;
     setActiveSpot({ ...activeSpot });
+  };
+
+  const removeVehicle = () => {
+    if (activeSpot.ticket.paid) {
+      parking.splice(activeSpot.ticket.id, 1);
+      setParking([...parking]);
+      setActiveSpot(null);
+    } else {
+      alert("Please pay before leaving.");
+    }
   };
 
   return (
@@ -30,7 +40,7 @@ const Ticket = ({ time, activeSpot, setActiveSpot }) => {
         >
           Pay Ticket
         </button>
-        <button>Leave Garage</button>
+        <button onClick={() => removeVehicle()}>Leave Garage</button>
         <button onClick={() => setActiveSpot(null)}>Back</button>
       </div>
     </div>

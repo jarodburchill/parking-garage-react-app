@@ -53,6 +53,8 @@ const App = () => {
           time={time}
           activeSpot={activeSpot}
           setActiveSpot={setActiveSpot}
+          parking={parking}
+          setParking={setParking}
         />
       );
     }
