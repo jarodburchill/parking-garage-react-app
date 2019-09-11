@@ -32,12 +32,29 @@ img {
   // background: rgb(54, 54, 54);
 }
 
+.time-container {
+  display: flex;
+  button {
+    margin: 0 0 0 2.5vh;
+  }
+}
+
+.ticket-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: lightgray;
+  padding: 1vh;
+  border-radius: 2vh;
+}
+
 .garage-container {
   width: 20vh;
   height: 50vh;
   background: rgb(255, 196, 0);
   padding: 0 0 1vh 0;
-  margin: 10vh;
+  margin: 5vh;
 }
 
 @mixin spot-container {

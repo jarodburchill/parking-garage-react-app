@@ -1,9 +1,10 @@
 import React from "react";
 
-const Ticket = () => {
+const Ticket = ({ time }) => {
   return (
-    <div>
-      <span>hello</span>
+    <div className="ticket-container">
+      <h2>Ticket</h2>
+      <h3>Issued: {time}:00</h3>
     </div>
   );
 };
