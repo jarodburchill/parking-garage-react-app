@@ -3,7 +3,7 @@ import Vehicle from "./Vehicle";
 
 const Spot = ({ spot, activeSpot, setActiveSpot }) => {
   let style = "occupied-spot";
-  console.log(activeSpot);
+
   if (activeSpot !== undefined && activeSpot !== null) {
     if (spot.ticket.id === activeSpot.ticket.id) {
       style = "selected-spot";
