@@ -45,7 +45,7 @@ const App = () => {
             <h1>{time}:00</h1>
             <button onClick={() => tick()}>▲</button>
           </div>
-          <button onClick={() => park()}>Park Vehicle</button>
+          <button onClick={() => park()}>Park New Vehicle</button>
         </div>
       );
     } else {
