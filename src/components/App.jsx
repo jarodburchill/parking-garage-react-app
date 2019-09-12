@@ -65,11 +65,7 @@ const App = () => {
   return (
     <div className="app-container">
       {getDisplay()}
-      <Parking
-        parking={parking}
-        activeSpot={activeSpot}
-        setActiveSpot={setActiveSpot}
-      />
+      <Parking parking={parking} setActiveSpot={setActiveSpot} />
     </div>
   );
 };
