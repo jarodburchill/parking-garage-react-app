@@ -20,7 +20,8 @@ const Ticket = ({ time, activeSpot, setActiveSpot, parking, setParking }) => {
 
   const removeVehicle = () => {
     if (activeSpot.ticket.paid) {
-      var index = parking.indexOf(activeSpot);
+      var index = parking.findIndex(e => e.ticket.id === activeSpot.ticket.id);
+      console.log(index);
       parking.splice(index, 1);
       setParking([...parking]);
       setActiveSpot(null);
