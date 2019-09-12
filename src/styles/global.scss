@@ -87,6 +87,7 @@ img {
   height: 7.35vh;
   background: rgb(168, 168, 168);
   margin: 1vh 0 1vh 1vh;
+  cursor: pointer;
 }
 
 .occupied-spot {
@@ -96,7 +97,6 @@ img {
   }
   &:focus {
     outline: 0;
-    // background: rgb(162, 116, 216);
   }
 }
 
@@ -110,4 +110,5 @@ img {
 
 .vacant-spot {
   @include spot-container;
+  cursor: default;
 }
