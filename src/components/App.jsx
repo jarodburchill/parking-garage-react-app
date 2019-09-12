@@ -12,6 +12,7 @@ const App = () => {
   const [parking, setParking] = useState([]);
   const [activeSpot, setActiveSpot] = useState(null);
   const [time, setTime] = useState(0);
+  const [id, setId] = useState(0);
 
   const getVehicle = () => {
     const vehicles = [car, compact, jeep, bus, truck, suv];
@@ -23,9 +24,10 @@ const App = () => {
     if (parking.length < 6) {
       parking.push({
         vehicle: getVehicle(),
-        ticket: { id: parking.length, time: time, paid: false }
+        ticket: { id: id, time: time, paid: false }
       });
       setParking([...parking]);
+      setId(id + 1);
     } else {
       alert("Lot is full!");
     }
