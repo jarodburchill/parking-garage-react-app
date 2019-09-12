@@ -62,6 +62,7 @@ const App = () => {
     }
   };
 
+  console.clear();
   console.log(parking);
 
   return (
