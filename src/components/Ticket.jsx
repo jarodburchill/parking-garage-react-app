@@ -1,6 +1,7 @@
 import React from "react";
 
 const Ticket = ({ time, activeSpot, setActiveSpot, parking, setParking }) => {
+  //calculates amount owed and sets ticket status to paid
   const calculateRate = () => {
     const hours = time - activeSpot.ticket.time;
     let amountOwed = 0;
@@ -18,10 +19,10 @@ const Ticket = ({ time, activeSpot, setActiveSpot, parking, setParking }) => {
     setActiveSpot({ ...activeSpot });
   };
 
+  //removes vehicle by ticket id if the ticket has been paid
   const removeVehicle = () => {
     if (activeSpot.ticket.paid) {
       var index = parking.findIndex(e => e.ticket.id === activeSpot.ticket.id);
-      console.log(index);
       parking.splice(index, 1);
       setParking([...parking]);
       setActiveSpot(null);

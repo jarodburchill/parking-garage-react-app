@@ -4,6 +4,7 @@ import Spot from "./Spot";
 const Parking = ({ parking, activeSpot, setActiveSpot }) => {
   let blanks = [];
 
+  //adds correct number of blank parking spots to an array
   if (parking.length < 6) {
     for (let i = 0; i < 6 - parking.length; i++) {
       blanks.push(i);

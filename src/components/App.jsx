@@ -14,12 +14,15 @@ const App = () => {
   const [time, setTime] = useState(0);
   const [id, setId] = useState(0);
 
+  //gets a random vehicle svg
   const getVehicle = () => {
     const vehicles = [car, compact, jeep, bus, truck, suv];
     const random = (Math.random() * 6) << 0;
     return vehicles[random];
   };
 
+  /*checks to make sure paking is not full 
+  then inserts a new object into the parking array*/
   const park = () => {
     if (parking.length < 6) {
       parking.push({
@@ -33,10 +36,12 @@ const App = () => {
     }
   };
 
+  //adds an hour to the time
   const tick = () => {
     setTime(time + 1);
   };
 
+  //conditionally renders time or ticket display
   const getDisplay = () => {
     if (activeSpot === null) {
       return (
@@ -62,7 +67,7 @@ const App = () => {
     }
   };
 
-  // console.clear();
+  console.clear();
   console.log(parking);
 
   return (
