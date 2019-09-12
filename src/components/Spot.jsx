@@ -1,17 +1,21 @@
 import React from "react";
 import Vehicle from "./Vehicle";
 
-const Spot = ({ spot, setActiveSpot }) => {
+const Spot = ({ spot, activeSpot, setActiveSpot }) => {
+  let style = "occupied-spot";
+  console.log(activeSpot);
+  if (activeSpot !== undefined && activeSpot !== null) {
+    if (spot.ticket.id === activeSpot.ticket.id) {
+      style = "selected-spot";
+    }
+  }
+
   if (spot === "vacant") {
     return <div className="vacant-spot"></div>;
   }
 
   return (
-    <div
-      className="occupied-spot"
-      onClick={() => setActiveSpot(spot)}
-      tabIndex="0"
-    >
+    <div className={style} onClick={() => setActiveSpot(spot)}>
       <Vehicle vehicle={spot.vehicle} />
     </div>
   );

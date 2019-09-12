@@ -75,8 +75,16 @@ img {
   }
   &:focus {
     outline: 0;
-    background: rgb(162, 116, 216);
+    // background: rgb(162, 116, 216);
   }
+}
+
+.selected-spot {
+  @include spot-container;
+  &:hover {
+    box-shadow: 0px 1px 5px rgb(0, 0, 0);
+  }
+  background: rgb(162, 116, 216);
 }
 
 .vacant-spot {
