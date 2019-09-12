@@ -27,7 +27,7 @@ const App = () => {
     if (parking.length < 6) {
       parking.push({
         vehicle: getVehicle(),
-        ticket: { id: id, time: time, paid: false }
+        ticket: { id: id, time: time }
       });
       setParking([...parking]);
       setId(id + 1);
