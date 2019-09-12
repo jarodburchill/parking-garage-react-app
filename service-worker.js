@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ParkingGarageReactApp/precache-manifest.5ff4173e565a59044cc0382d44fa4fe2.js"
+  "/ParkingGarageReactApp/precache-manifest.a0867b79c615fdb0da67dc47c989ae67.js"
 );
 
 self.addEventListener('message', (event) => {
