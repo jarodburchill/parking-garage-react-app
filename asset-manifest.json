@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/ParkingGarageReactApp/static/css/main.671529ff.chunk.css",
+    "main.js": "/ParkingGarageReactApp/static/js/main.6db2043e.chunk.js",
+    "main.js.map": "/ParkingGarageReactApp/static/js/main.6db2043e.chunk.js.map",
+    "runtime~main.js": "/ParkingGarageReactApp/static/js/runtime~main.5221013a.js",
+    "runtime~main.js.map": "/ParkingGarageReactApp/static/js/runtime~main.5221013a.js.map",
+    "static/js/2.aad51267.chunk.js": "/ParkingGarageReactApp/static/js/2.aad51267.chunk.js",
+    "static/js/2.aad51267.chunk.js.map": "/ParkingGarageReactApp/static/js/2.aad51267.chunk.js.map",
+    "index.html": "/ParkingGarageReactApp/index.html",
+    "precache-manifest.858b1640a6097731e154420410237510.js": "/ParkingGarageReactApp/precache-manifest.858b1640a6097731e154420410237510.js",
+    "service-worker.js": "/ParkingGarageReactApp/service-worker.js",
+    "static/css/main.671529ff.chunk.css.map": "/ParkingGarageReactApp/static/css/main.671529ff.chunk.css.map",
+    "static/media/bus.svg": "/ParkingGarageReactApp/static/media/bus.859f0931.svg",
+    "static/media/car.svg": "/ParkingGarageReactApp/static/media/car.3d95e9ca.svg",
+    "static/media/compact.svg": "/ParkingGarageReactApp/static/media/compact.ce284be3.svg",
+    "static/media/jeep.svg": "/ParkingGarageReactApp/static/media/jeep.d98ea16e.svg",
+    "static/media/suv.svg": "/ParkingGarageReactApp/static/media/suv.f3404e2a.svg",
+    "static/media/truck.svg": "/ParkingGarageReactApp/static/media/truck.2e2e1b9a.svg"
+  }
+}
