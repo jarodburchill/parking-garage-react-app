@@ -35,7 +35,7 @@ const Ticket = ({ time, activeSpot, setActiveSpot, parking, setParking }) => {
   //gets pay button when pay is set to true
   const getPayButton = () => {
     if (pay) {
-      return <button onClick={() => calculateRate()}>Pay Ticket</button>;
+      return <button onClick={() => calculateRate()}>Pay for Ticket</button>;
     }
   };
 

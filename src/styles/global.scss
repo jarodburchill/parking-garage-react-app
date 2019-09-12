@@ -33,7 +33,7 @@ img {
 
 .display-container {
   width: 30vh;
-  height: 20vh;
+  min-height: 18vh;
   display: flex;
   flex-direction: column;
   align-items: center;
