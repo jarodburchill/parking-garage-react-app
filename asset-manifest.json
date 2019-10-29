@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/ParkingGarageReactApp/static/css/main.1fa1d484.chunk.css",
-    "main.js": "/ParkingGarageReactApp/static/js/main.8507bcb4.chunk.js",
-    "main.js.map": "/ParkingGarageReactApp/static/js/main.8507bcb4.chunk.js.map",
-    "runtime~main.js": "/ParkingGarageReactApp/static/js/runtime~main.5221013a.js",
-    "runtime~main.js.map": "/ParkingGarageReactApp/static/js/runtime~main.5221013a.js.map",
-    "static/js/2.dbe22de2.chunk.js": "/ParkingGarageReactApp/static/js/2.dbe22de2.chunk.js",
-    "static/js/2.dbe22de2.chunk.js.map": "/ParkingGarageReactApp/static/js/2.dbe22de2.chunk.js.map",
-    "index.html": "/ParkingGarageReactApp/index.html",
-    "precache-manifest.a0867b79c615fdb0da67dc47c989ae67.js": "/ParkingGarageReactApp/precache-manifest.a0867b79c615fdb0da67dc47c989ae67.js",
-    "service-worker.js": "/ParkingGarageReactApp/service-worker.js",
-    "static/css/main.1fa1d484.chunk.css.map": "/ParkingGarageReactApp/static/css/main.1fa1d484.chunk.css.map",
-    "static/media/bus.svg": "/ParkingGarageReactApp/static/media/bus.859f0931.svg",
-    "static/media/car.svg": "/ParkingGarageReactApp/static/media/car.3d95e9ca.svg",
-    "static/media/compact.svg": "/ParkingGarageReactApp/static/media/compact.ce284be3.svg",
-    "static/media/jeep.svg": "/ParkingGarageReactApp/static/media/jeep.d98ea16e.svg",
-    "static/media/suv.svg": "/ParkingGarageReactApp/static/media/suv.f3404e2a.svg",
-    "static/media/truck.svg": "/ParkingGarageReactApp/static/media/truck.2e2e1b9a.svg"
+    "main.css": "/parking-garage-react-app/static/css/main.1fa1d484.chunk.css",
+    "main.js": "/parking-garage-react-app/static/js/main.c5eca216.chunk.js",
+    "main.js.map": "/parking-garage-react-app/static/js/main.c5eca216.chunk.js.map",
+    "runtime~main.js": "/parking-garage-react-app/static/js/runtime~main.c82d60e3.js",
+    "runtime~main.js.map": "/parking-garage-react-app/static/js/runtime~main.c82d60e3.js.map",
+    "static/js/2.bd5eb45e.chunk.js": "/parking-garage-react-app/static/js/2.bd5eb45e.chunk.js",
+    "static/js/2.bd5eb45e.chunk.js.map": "/parking-garage-react-app/static/js/2.bd5eb45e.chunk.js.map",
+    "index.html": "/parking-garage-react-app/index.html",
+    "precache-manifest.52026cf5fc8402dd00ef4b71ee4c1eb7.js": "/parking-garage-react-app/precache-manifest.52026cf5fc8402dd00ef4b71ee4c1eb7.js",
+    "service-worker.js": "/parking-garage-react-app/service-worker.js",
+    "static/css/main.1fa1d484.chunk.css.map": "/parking-garage-react-app/static/css/main.1fa1d484.chunk.css.map",
+    "static/media/bus.svg": "/parking-garage-react-app/static/media/bus.859f0931.svg",
+    "static/media/car.svg": "/parking-garage-react-app/static/media/car.3d95e9ca.svg",
+    "static/media/compact.svg": "/parking-garage-react-app/static/media/compact.ce284be3.svg",
+    "static/media/jeep.svg": "/parking-garage-react-app/static/media/jeep.d98ea16e.svg",
+    "static/media/suv.svg": "/parking-garage-react-app/static/media/suv.f3404e2a.svg",
+    "static/media/truck.svg": "/parking-garage-react-app/static/media/truck.2e2e1b9a.svg"
   }
 }
