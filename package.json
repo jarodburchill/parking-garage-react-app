@@ -1,6 +1,6 @@
 {
-  "homepage": "https://jarodburchill.github.io/ParkingGarageReactApp",
-  "name": "parking-garage",
+  "homepage": "https://jarodburchill.github.io/parking-garage-react-app",
+  "name": "parking-garage-react-app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
